@@ -1,0 +1,24 @@
+.countryPageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.imageWrapper {
+  position: relative;
+  height: 512px;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.title {
+  font-size: 48px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

@@ -1,0 +1,19 @@
+.skeleton {
+  background: linear-gradient(
+    120deg,
+    var(--gray) 0%,
+    var(--white) 38%,
+    var(--gray) 40%,
+    var(--gray) 48%
+  );
+  background-size: 500%;
+  background-position: 100% 0;
+  animation: loading 1500ms ease-in-out infinite;
+  border-radius: 8px;
+
+  @keyframes loading {
+    to {
+      background-position-x: -20%;
+    }
+  }
+}
