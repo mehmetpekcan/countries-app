@@ -11,7 +11,11 @@ function SearchBar() {
   );
 
   const updateQuery = () => {
-    router.replace(`/?search=${searchValue}`);
+    if (searchValue === "") {
+      router.replace("/");
+    } else {
+      router.replace(`/?search=${searchValue}`);
+    }
   };
 
   return (

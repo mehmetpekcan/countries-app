@@ -13,4 +13,5 @@ async function HomePage({ searchParams: { search = "" } }) {
   );
 }
 
+export const dynamic = "force-dynamic";
 export default HomePage;

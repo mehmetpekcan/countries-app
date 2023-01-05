@@ -13,9 +13,9 @@ async function CountryPage({ params }) {
   return <CountryPageContainer {...country} />;
 }
 
-export async function generateStaticParams() {
-  const countries = await getCountries();
-  return countries.map((country) => ({ slug: country.name.common }));
-}
+// export async function generateStaticParams() {
+//   const countries = await getCountries();
+//   return countries.map((country) => ({ slug: country.name.common }));
+// }
 
 export default CountryPage;
